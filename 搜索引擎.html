@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>世界之窗</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 27px;
+  text-align: center;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: white;
+}
+
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  color:white;
+  padding: 15px;
+  text-align: center;
+  background: black;
+  margin-top: 15px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+p.inset {border-style: inset;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>世界之窗</h1>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h3>简介</h3>   
+<p>&nbsp</p>
+    </div>
+    <div class="card">
+      <h3>搜索引擎</h3>
+<h3>&nbsp</h3>
+<h5>&nbsp&nbsp 百度搜索 <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimgup04.iefans.net%2Fiefans%2F2019-03%2F12%2F14%2F15523738668306_0.jpg&refer=http%3A%2F%2Fimgup04.iefans.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621435601&t=3c5bf6ee23f67820c2c1ea7db0199cc8" alt="logo"width="30" height="30" ></h5>
+<h6>&nbsp</h6>
+<h7>&nbsp</h7>
+<h5>&nbsp&nbsp 360搜索 <img src="https://www.yozrun.com/UploadFiles/img_2_2107730761_3945316637_26.jpg" alt="logo"width="30" height="30" ></h5>      
+<h6>&nbsp</h6>
+<h7>&nbsp</h7>
+<h5>&nbsp&nbsp 天猫搜索 <img src="https://tse3-mm.cn.bing.net/th/id/OIP.ge3f7jl3QTACYaJaV-JhnQHaIA?pid=ImgDet&rs=1" alt="logo"width="30" height="30"></h5>
+<h6>&nbsp</h6>
+<h7>&nbsp</h7>
+<h5>&nbsp&nbsp 优酷搜索 <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.haodanku.com%2Foimg_568891826870_1566440187.jpg_600x600.jpg&refer=http%3A%2F%2Fimg.haodanku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621435864&t=7b338d96056e18d122c0396385996ae9" alt="logo"width="30" height="30"></h5>
+<h6>&nbsp</h6>
+<h7>&nbsp</h7>
+<h5>&nbsp&nbsp 必应搜索 <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.visualstudio.com%2Fwp-content%2Fuploads%2F2017%2F12%2Fbing-thumb-2x.png&refer=http%3A%2F%2Fwww.visualstudio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621436161&t=9527bb79ab4aa837d5f21c15a544c515" alt="logo"width="30" height="30"></h5>
+<h6>&nbsp</h6>
+<h7>&nbsp</h7>
+<h5>&nbsp&nbsp 搜狗搜索 <img src="https://p1.ssl.qhimg.com/t0141db91fbc85b5979.png"alt="logo"width="30" height="30"></h5>
+<h8>&nbsp</h8> 
+   </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>这是一个神奇的搜索窗口&#128512;</h3>
+<p>在这里，你可以通过百度搜索、360搜索、优酷搜索、必应搜索等找到各种你想要的信息。</p>
+    </div>
+    <div class="card">
+      <h3>搜索引擎们&#128516;</h3>
+<h6>&nbsp</h6>
+      <p>       <form action="https://www.baidu.com/s" method="get">
+                <input type="text" name="wd"  size="60">
+                <input type="submit" value=" &nbsp百 度 搜 索&nbsp ">
+        </form></p>
+<h8>&nbsp</h8>
+      <p>        <form action="https://www.so.com/s" method="get">
+                <input type="text" name="q" size="60">
+                <input type="submit" value="&nbsp 3 6 0 搜 索&nbsp ">
+        </form></p>
+<h8>&nbsp</h8>
+      <p>        <form action="https://list.tmall.com/search_product.htm" method="get">
+                <input type="text" name="q" size="60">
+                <input type="submit" value=" &nbsp天 猫 搜 索&nbsp ">
+        </form></p>
+<h8>&nbsp</h8>
+      <p>        <form action="http://www.soku.com/v" method="get">
+                <input type="text" name="keyword" size="60">
+                <input type="submit" value=" &nbsp优 酷 搜 索 &nbsp">
+        </form></p>
+<h8>&nbsp</h8>
+      <p>        <form action="http://cn.bing.com/search" method="get">
+                <input type="text" name="q" size="60">
+                <input type="submit" value="&nbsp 必 应 搜 索 &nbsp">
+        </form></p>
+<h8>&nbsp</h8>
+      <p>        <form action="https://www.sogou.com/web" method="get">
+                <input type="text" name="query" size="60">
+                <input type="submit" value="  &nbsp搜 狗 搜 索&nbsp ">
+        </form></p>
+<h6>&nbsp</h6>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <p>在这里，让思想遨游</p>
+</div>
+
+</body>
+</html>

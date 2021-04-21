@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>妖精森林的小不点</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 27px;
+  text-align: center;
+  background: #ddd;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+p.inset {border-style: inset;}
+
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>妖精森林的小不点</h1>
+  <p>ハクメイとミコチ</p>
+</div>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>剧情简介</h2>
+      <h5>这里充满治愈的故事</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp住在绿意盎然森林里的，两位小巧的女孩子。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp御子地跟白明，原本不相识的两人误打误撞而住在同一个屋檐下。</p> 
+     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp白明是个红毛行动派，某天看到报纸上有人目击到夕阳鹰出没，马上就准备好东西拉着御子地上山去等夕阳鹰，后来才发现原来夕阳鹰曾经是御子地在 10 年前曾经短暂饲养过的白鸟。</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp而御子地则是黑发理性派，擅长家务料理而且还特别擅长唱歌（本人没有自觉），两个小人妹子在大树根下的房屋中一起生活与各种各样的小人朋友相遇相识。</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp在树洞里建造住家、把树叶当做雨伞、坐在昆虫和小鸟的背上……</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp如果身高只有9厘米的话，这种事情是可以做得到的。</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是愉快而又安详的，森林中的日常。</p>
+   </div>
+    <div class="card">
+      <h2>部分角色介绍</h2>
+<h5>白明 ハクメイ</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp头发乱乱的元气的女孩子，曾经在各地旅行。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp行动派、室外派。</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp身强体健，但不会游泳。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp目前在做修理师的工作，技术很好。</p>
+<h5>御子地 ミコチ</h5>      
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp温柔内向的居家派，擅长料理与缝纫等家务。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp歌喉很好，十分受人欢迎。</p> 
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp平时从事干货与香料制作。</p>
+<h5>康居 コンジュ</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp卷发、双马尾的女孩子。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp吟游诗人，时常担任歌手的工作，擅长唱低音并用胸前的竖琴伴奏。</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp不擅长料理，但很会包装与制作肥皂。</p>
+<h5>千 セン</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp住在沼泽的研究员，猫眼、单马尾。眼睛的夜视能力相当好。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp从事“生命学”研究，研制出了能用声音作为动力操作骨骸的技术“音乐灯”，并住在研究成果——骨龟“乔治”里面。</p>
+<h5>嘉妲 ジャダ</h5>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp住在蛋壳小屋“翡翠之卵”里的美发师，拥有杰出的美发技术，为人却偏近懒散。</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp特别喜欢莫西干头发型。</p>
+<h5>鰯 いわしだに</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp黄鼬，负责引领哈库梅伊工作的工头。</p> 
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp修理技术相当好，非常信任一块工作的哈库梅伊。</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp性格很好，不太会拒绝别人</p>
+<h5>西风 ナライ</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp木匠公会“石贯会”的会长，对工匠要求严谨。</p> 
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp年轻时振兴了衰落的工匠业界，靠着顶尖的技术逐步完成工作累积声望，成就了如今的石贯会。</p>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp总是不苟言笑，但其实生性温柔脆弱。</p>
+<h5>火天 カテン</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp果子狸，木匠公会“石贯会”的副会长。</p> 
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp身材虽高大，个性却随和友善，慢条斯理。</p>
+
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>动画音乐</h2>
+
+<audio controls>
+  <source src="urar.mp3" type="audio/mpeg">
+  <source src="urar.ogg" type="audio/ogg">
+  <embed height="50" width="100" src="horse.mp3">
+</audio>
+<p>OP 《urar》 </p>
+
+<audio controls>
+  <source src="Harvest Moon Night.mp3" type="audio/mpeg">
+  <source src="Harvest Moon Night.ogg" type="audio/ogg">
+  <embed height="50" width="100" src="horse.mp3">
+</audio>
+<p>ED1 《Harvest Moon Night》</p>
+
+<audio controls>
+  <source src="水底のリズム.mp3" type="audio/mpeg">
+  <source src="水底のリズム.ogg" type="audio/ogg">
+  <embed height="50" width="100" src="horse.mp3">
+</audio>
+<p>ED2 《水底のリズム》</p>
+  </div>
+    <div class="card">
+  <div class="card-body">
+    <h4 class="card-title">快捷入口</h4>
+    <a href="https://www.bilibili.com/bangumi/play/ss21717/?from=search&seid=4238992622114686979" target="_blank" class="card-link">播放动画</a>
+    <a href="https://baike.baidu.com/item/%E5%A6%96%E7%B2%BE%E6%A3%AE%E6%9E%97%E7%9A%84%E5%B0%8F%E4%B8%8D%E7%82%B9/22066219#reference-[5]-22711604-wrap" target="_blank" class="card-link">更多内容</a>
+  </div>    
+    </div>
+
+
+    <div class="card">
+    <h5>一些小不点</h5> 
+    </div>
+
+<div id="demo1" class="carousel slide" data-ride="carousel">
+ 
+  <!-- 轮播图片 -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://bkimg.cdn.bcebos.com/pic/ae51f3deb48f8c5494eebcb314623af5e0fe9925d15e?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto"alt="插图">
+      <div class="carousel-caption">
+        <h4 >白明</h4>
+        <p >ハクメイ</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/4034970a304e251f95caa16489cdde177f3e6709f55e?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyMjA=,g_7,xp_5,yp_5/format,f_auto"alt="插图">
+      <div class="carousel-caption">
+        <h4 >御子地</h4>
+        <p >ミコチ</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/2fdda3cc7cd98d1001e90aac0f74af0e7bec54e73a51?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto"alt="插图">
+      <div class="carousel-caption">
+        <h4 >康居</h4>
+        <p >コンジュ</p>
+      </div>
+    </div>
+ <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/7af40ad162d9f2d3572cce7287a79d13632762d06650?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyMjA=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4 >千</h4>
+        <p >セン</p>
+      </div>
+    </div>
+<div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/eaf81a4c510fd9f9d72a67f60b66c32a2834349b0e53?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4 >嘉妲</h4>
+        <p >ジャダ</p>
+      </div>
+    </div>
+ <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/d4628535e5dde71190ef346889a4d91b9d16fdfacb50?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxMTY=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4 >玛雅</h4>
+        <p >マヤ</p>
+      </div>
+    </div>
+   <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/8b13632762d0f703918f465d26b1463d269759ee6f54?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4 >西风</h4>
+        <p >ナライ</p>
+      </div>
+    </div>
+  <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/9358d109b3de9c82d158ac0b42ca970a19d8bc3ee556?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4>爱结音</h4>
+        <p >アユネ</p>
+      </div>
+    </div>
+  <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/d52a2834349b033b5bb5c7583b8521d3d539b6001754?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4>哈库优</h4>
+        <p >アユネ</p>
+      </div>
+    </div>
+  <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/d058ccbf6c81800a19d8d88c9f7e24fa828ba61ee954?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4>茜娜垛</h4>
+        <p >シナト</p>
+      </div>
+    </div>
+  <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/94cad1c8a786c9177f3e13bbe77667cf3bc79f3df954?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4>蜜玛丽</h4>
+        <p >ミマリ</p>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- 左右切换按钮 -->
+  <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo1" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+ 
+</div>
+
+
+
+
+
+
+
+    <div class="card">
+    <h5>一些大动物</h5> 
+    </div>
+
+<div id="demo2" class="carousel slide" data-ride="carousel">
+ 
+  <!-- 轮播图片 -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3ce414cd2488545d688d43f8b55?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto"alt="插图">
+      <div class="carousel-caption">
+        <h4 >鰯</h4>
+        <p >いわしだに</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/1b4c510fd9f9d72a60592d9ffa613f34349b033b0d54?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto"alt="插图">
+      <div class="carousel-caption">
+        <h4 >火天</h4>
+        <p >カテン</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/7aec54e736d12f2eb938a0e46189c2628535e5ddc256?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto"alt="插图">
+      <div class="carousel-caption">
+        <h4 >咪咪</h4>
+        <p >ミミ</p>
+      </div>
+    </div>
+ <div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/d000baa1cd11728b4710c6a1e6b7d4cec3fdfc038657?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4 >旋毛丸</h4>
+        <p >ツムジマル</p>
+      </div>
+    </div>
+<div class="carousel-item">
+      <img src="https://bkimg.cdn.bcebos.com/pic/f31fbe096b63f6246b60d23ad70ffcf81a4c510f05fc?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UyNzI=,g_7,xp_5,yp_5/format,f_auto" alt="插图">
+      <div class="carousel-caption">
+        <h4 >多雷姆</h4>
+        <p >トレモ</p>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- 左右切换按钮 -->
+  <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo2" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+ 
+</div>
+
+
+
+
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>My Website</h2>
+</div>
+
+
+
+
+
+</body>
+</html>

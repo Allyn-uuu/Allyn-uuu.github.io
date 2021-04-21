@@ -1,0 +1,4004 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'cba6ad4b5a3d469ab9c2bcfb70d8cc59')">年龄</button>
+            <button class="tablinks" onclick="showChart(event, '4f74ac52beac431d84d1590699b3e27d')">性别</button>
+            <button class="tablinks" onclick="showChart(event, '1edcfd5fcc544cbf89d50d387cb484b4')">家族</button>
+    </div>
+
+    <div class="box">
+                <div id="cba6ad4b5a3d469ab9c2bcfb70d8cc59" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_cba6ad4b5a3d469ab9c2bcfb70d8cc59 = echarts.init(
+            document.getElementById('cba6ad4b5a3d469ab9c2bcfb70d8cc59'), 'white', {renderer: 'canvas'});
+        var option_cba6ad4b5a3d469ab9c2bcfb70d8cc59 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 5000,
+                "edgeLength": [
+                    10,
+                    50
+                ],
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.2,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "\u5b59\u5c11\u5e73",
+                    "fixed": false,
+                    "value": 1555,
+                    "category": 1,
+                    "symbolSize": 77.75
+                },
+                {
+                    "name": "\u5b59\u5c11\u5b89",
+                    "fixed": false,
+                    "value": 1400,
+                    "category": 1,
+                    "symbolSize": 70.0
+                },
+                {
+                    "name": "\u7530\u6da6\u53f6",
+                    "fixed": false,
+                    "value": 830,
+                    "category": 1,
+                    "symbolSize": 41.5
+                },
+                {
+                    "name": "\u5b59\u7389\u4ead",
+                    "fixed": false,
+                    "value": 578,
+                    "category": 2,
+                    "symbolSize": 28.9
+                },
+                {
+                    "name": "\u7530\u798f\u5802",
+                    "fixed": false,
+                    "value": 569,
+                    "category": 2,
+                    "symbolSize": 28.45
+                },
+                {
+                    "name": "\u7530\u6653\u971e",
+                    "fixed": false,
+                    "value": 494,
+                    "category": 1,
+                    "symbolSize": 24.7
+                },
+                {
+                    "name": "\u7530\u798f\u519b",
+                    "fixed": false,
+                    "value": 451,
+                    "category": 2,
+                    "symbolSize": 22.55
+                },
+                {
+                    "name": "\u8d3a\u79c0\u83b2",
+                    "fixed": false,
+                    "value": 365,
+                    "category": 1,
+                    "symbolSize": 18.25
+                },
+                {
+                    "name": "\u674e\u5411\u524d",
+                    "fixed": false,
+                    "value": 342,
+                    "category": 1,
+                    "symbolSize": 17.1
+                },
+                {
+                    "name": "\u91d1\u6ce2",
+                    "fixed": false,
+                    "value": 308,
+                    "category": 1,
+                    "symbolSize": 15.4
+                },
+                {
+                    "name": "\u5b59\u7389\u539a",
+                    "fixed": false,
+                    "value": 281,
+                    "category": 2,
+                    "symbolSize": 14.05
+                },
+                {
+                    "name": "\u91d1\u4fca\u6b66",
+                    "fixed": false,
+                    "value": 275,
+                    "category": 2,
+                    "symbolSize": 13.75
+                },
+                {
+                    "name": "\u5b59\u5170\u9999",
+                    "fixed": false,
+                    "value": 234,
+                    "category": 1,
+                    "symbolSize": 11.7
+                },
+                {
+                    "name": "\u7530\u6da6\u751f",
+                    "fixed": false,
+                    "value": 220,
+                    "category": 1,
+                    "symbolSize": 11.0
+                },
+                {
+                    "name": "\u90dd\u7ea2\u6885",
+                    "fixed": false,
+                    "value": 209,
+                    "category": 1,
+                    "symbolSize": 10.45
+                },
+                {
+                    "name": "\u60e0\u82f1",
+                    "fixed": false,
+                    "value": 167,
+                    "category": 1,
+                    "symbolSize": 8.35
+                },
+                {
+                    "name": "\u91d1\u4fca\u5c71",
+                    "fixed": false,
+                    "value": 161,
+                    "category": 2,
+                    "symbolSize": 8.05
+                },
+                {
+                    "name": "\u5f90\u6cbb\u529f",
+                    "fixed": false,
+                    "value": 158,
+                    "category": 2,
+                    "symbolSize": 7.9
+                },
+                {
+                    "name": "\u738b\u4e16\u624d",
+                    "fixed": false,
+                    "value": 156,
+                    "category": 1,
+                    "symbolSize": 7.8
+                },
+                {
+                    "name": "\u7530\u6d77\u6c11",
+                    "fixed": false,
+                    "value": 147,
+                    "category": 2,
+                    "symbolSize": 7.35
+                },
+                {
+                    "name": "\u987e\u517b\u6c11",
+                    "fixed": false,
+                    "value": 145,
+                    "category": 1,
+                    "symbolSize": 7.25
+                },
+                {
+                    "name": "\u5f20\u6709\u667a",
+                    "fixed": false,
+                    "value": 125,
+                    "category": 2,
+                    "symbolSize": 6.25
+                },
+                {
+                    "name": "\u674e\u767b\u4e91",
+                    "fixed": false,
+                    "value": 116,
+                    "category": 2,
+                    "symbolSize": 5.8
+                },
+                {
+                    "name": "\u91d1\u5149\u4eae",
+                    "fixed": false,
+                    "value": 114,
+                    "category": 2,
+                    "symbolSize": 5.7
+                },
+                {
+                    "name": "\u51af\u4e16\u5bbd",
+                    "fixed": false,
+                    "value": 109,
+                    "category": 2,
+                    "symbolSize": 5.45
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "\u5e74\u8f7b\u4e00\u8f88"
+                },
+                {
+                    "name": "\u8001\u4e00\u8f88"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 101
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u91d1\u6ce2",
+                    "value": 22
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 85
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 79
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 11
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 12
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u91d1\u6ce2",
+                    "value": 219
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 25
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 53
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 109
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 101
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 81
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 318
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 72
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 165
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u60e0\u82f1",
+                    "value": 88
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 32
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 48
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 15
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 64
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 109
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 85
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u91d1\u6ce2",
+                    "value": 59
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 33
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 219
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 31
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 27
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 13
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 42
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 22
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 59
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 12
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 13
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 20
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u6ce2",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 25
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 57
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 223
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 115
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 43
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 124
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 48
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 15
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 123
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 69
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 10
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 12
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u91d1\u6ce2",
+                    "value": 31
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 53
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 57
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 34
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 79
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 18
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 44
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 34
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 81
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 197
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 16
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u91d1\u6ce2",
+                    "value": 13
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 22
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 69
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 238
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 49
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 25
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 318
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u91d1\u6ce2",
+                    "value": 27
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 33
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 26
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u60e0\u82f1",
+                    "value": 12
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 197
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 149
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 165
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 124
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 39
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 27
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 23
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 23
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 352
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u6ce2",
+                    "value": 13
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 30
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 21
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 16
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 149
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 91
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 43
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 32
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 26
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 72
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u91d1\u6ce2",
+                    "value": 42
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 22
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 91
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 223
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u6ce2",
+                    "value": 11
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 87
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 18
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 126
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 44
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 14
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 18
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 88
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 12
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 35
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 30
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 92
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 123
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 54
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 126
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 23
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 10
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 30
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 37
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 35
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 12
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 21
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 14
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 87
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 115
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 54
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 23
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 14
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 20
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 12
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 18
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 48
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 11
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 23
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 15
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 24
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 55
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 81
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 27
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 90
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 15
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 39
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 81
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 12
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 39
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 26
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u60e0\u82f1",
+                    "value": 35
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 64
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 238
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 24
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 58
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 20
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 44
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 10
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u91d1\u6ce2",
+                    "value": 20
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 55
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 58
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 39
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 49
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 19
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 44
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 23
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 14
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 30
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 14
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 352
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 48
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u91d1\u6ce2",
+                    "value": 12
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 19
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 10
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 10
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 14
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 26
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 25
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 90
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 12
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 19
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 10
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "\u5e74\u8f7b\u4e00\u8f88",
+                "\u8001\u4e00\u8f88"
+            ],
+            "selected": {
+                "": true,
+                "\u5e74\u8f7b\u4e00\u8f88": true,
+                "\u8001\u4e00\u8f88": true
+            }
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    }
+};
+        chart_cba6ad4b5a3d469ab9c2bcfb70d8cc59.setOption(option_cba6ad4b5a3d469ab9c2bcfb70d8cc59);
+    </script>
+                <div id="4f74ac52beac431d84d1590699b3e27d" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_4f74ac52beac431d84d1590699b3e27d = echarts.init(
+            document.getElementById('4f74ac52beac431d84d1590699b3e27d'), 'white', {renderer: 'canvas'});
+        var option_4f74ac52beac431d84d1590699b3e27d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 5000,
+                "edgeLength": [
+                    10,
+                    50
+                ],
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "\u5b59\u5c11\u5e73",
+                    "fixed": false,
+                    "value": 1555,
+                    "category": 1,
+                    "symbolSize": 77.75
+                },
+                {
+                    "name": "\u5b59\u5c11\u5b89",
+                    "fixed": false,
+                    "value": 1400,
+                    "category": 1,
+                    "symbolSize": 70.0
+                },
+                {
+                    "name": "\u7530\u6da6\u53f6",
+                    "fixed": false,
+                    "value": 830,
+                    "category": 2,
+                    "symbolSize": 41.5
+                },
+                {
+                    "name": "\u5b59\u7389\u4ead",
+                    "fixed": false,
+                    "value": 578,
+                    "category": 1,
+                    "symbolSize": 28.9
+                },
+                {
+                    "name": "\u7530\u798f\u5802",
+                    "fixed": false,
+                    "value": 569,
+                    "category": 1,
+                    "symbolSize": 28.45
+                },
+                {
+                    "name": "\u7530\u6653\u971e",
+                    "fixed": false,
+                    "value": 494,
+                    "category": 2,
+                    "symbolSize": 24.7
+                },
+                {
+                    "name": "\u7530\u798f\u519b",
+                    "fixed": false,
+                    "value": 451,
+                    "category": 1,
+                    "symbolSize": 22.55
+                },
+                {
+                    "name": "\u8d3a\u79c0\u83b2",
+                    "fixed": false,
+                    "value": 365,
+                    "category": 2,
+                    "symbolSize": 18.25
+                },
+                {
+                    "name": "\u674e\u5411\u524d",
+                    "fixed": false,
+                    "value": 342,
+                    "category": 1,
+                    "symbolSize": 17.1
+                },
+                {
+                    "name": "\u91d1\u6ce2",
+                    "fixed": false,
+                    "value": 308,
+                    "category": 1,
+                    "symbolSize": 15.4
+                },
+                {
+                    "name": "\u5b59\u7389\u539a",
+                    "fixed": false,
+                    "value": 281,
+                    "category": 1,
+                    "symbolSize": 14.05
+                },
+                {
+                    "name": "\u91d1\u4fca\u6b66",
+                    "fixed": false,
+                    "value": 275,
+                    "category": 1,
+                    "symbolSize": 13.75
+                },
+                {
+                    "name": "\u5b59\u5170\u9999",
+                    "fixed": false,
+                    "value": 234,
+                    "category": 2,
+                    "symbolSize": 11.7
+                },
+                {
+                    "name": "\u7530\u6da6\u751f",
+                    "fixed": false,
+                    "value": 220,
+                    "category": 1,
+                    "symbolSize": 11.0
+                },
+                {
+                    "name": "\u90dd\u7ea2\u6885",
+                    "fixed": false,
+                    "value": 209,
+                    "category": 2,
+                    "symbolSize": 10.45
+                },
+                {
+                    "name": "\u60e0\u82f1",
+                    "fixed": false,
+                    "value": 167,
+                    "category": 2,
+                    "symbolSize": 8.35
+                },
+                {
+                    "name": "\u91d1\u4fca\u5c71",
+                    "fixed": false,
+                    "value": 161,
+                    "category": 1,
+                    "symbolSize": 8.05
+                },
+                {
+                    "name": "\u5f90\u6cbb\u529f",
+                    "fixed": false,
+                    "value": 158,
+                    "category": 1,
+                    "symbolSize": 7.9
+                },
+                {
+                    "name": "\u738b\u4e16\u624d",
+                    "fixed": false,
+                    "value": 156,
+                    "category": 1,
+                    "symbolSize": 7.8
+                },
+                {
+                    "name": "\u7530\u6d77\u6c11",
+                    "fixed": false,
+                    "value": 147,
+                    "category": 1,
+                    "symbolSize": 7.35
+                },
+                {
+                    "name": "\u987e\u517b\u6c11",
+                    "fixed": false,
+                    "value": 145,
+                    "category": 1,
+                    "symbolSize": 7.25
+                },
+                {
+                    "name": "\u5f20\u6709\u667a",
+                    "fixed": false,
+                    "value": 125,
+                    "category": 1,
+                    "symbolSize": 6.25
+                },
+                {
+                    "name": "\u674e\u767b\u4e91",
+                    "fixed": false,
+                    "value": 116,
+                    "category": 1,
+                    "symbolSize": 5.8
+                },
+                {
+                    "name": "\u91d1\u5149\u4eae",
+                    "fixed": false,
+                    "value": 114,
+                    "category": 1,
+                    "symbolSize": 5.7
+                },
+                {
+                    "name": "\u51af\u4e16\u5bbd",
+                    "fixed": false,
+                    "value": 109,
+                    "category": 1,
+                    "symbolSize": 5.45
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "\u7537"
+                },
+                {
+                    "name": "\u5973"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 101
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u91d1\u6ce2",
+                    "value": 22
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 85
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 79
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 11
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 12
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u91d1\u6ce2",
+                    "value": 219
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 25
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 53
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 109
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 101
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 81
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 318
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 72
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 165
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u60e0\u82f1",
+                    "value": 88
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 32
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 48
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 15
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 64
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 109
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 85
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u91d1\u6ce2",
+                    "value": 59
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 33
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 219
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 31
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 27
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 13
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 42
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 22
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 59
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 12
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 13
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 20
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u6ce2",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 25
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 57
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 223
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 115
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 43
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 124
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 48
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 15
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 123
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 69
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 10
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 12
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u91d1\u6ce2",
+                    "value": 31
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 53
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 57
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 34
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 79
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 18
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 44
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 34
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 81
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 197
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 16
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u91d1\u6ce2",
+                    "value": 13
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 22
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 69
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 238
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 49
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 25
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 318
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u91d1\u6ce2",
+                    "value": 27
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 33
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 26
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u60e0\u82f1",
+                    "value": 12
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 197
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 149
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 165
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 124
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 39
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 27
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 23
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 23
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 352
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u6ce2",
+                    "value": 13
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 30
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 21
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 16
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 149
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 91
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 43
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 32
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 26
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 72
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u91d1\u6ce2",
+                    "value": 42
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 22
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 91
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 223
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u6ce2",
+                    "value": 11
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 87
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 18
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 126
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 44
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 14
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 18
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 88
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 12
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 35
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 30
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 92
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 123
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 54
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 126
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 23
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 10
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 30
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 37
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 35
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 12
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 21
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 14
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 87
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 115
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 54
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 23
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 14
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 20
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 12
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 18
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 48
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 11
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 23
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 15
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 24
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 55
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 81
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 27
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 90
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 15
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 39
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 81
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 12
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 39
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 26
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u60e0\u82f1",
+                    "value": 35
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 64
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 238
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 24
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 58
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 20
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 44
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 10
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u91d1\u6ce2",
+                    "value": 20
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 55
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 58
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 39
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 49
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 19
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 44
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 23
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 14
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 30
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 14
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 352
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 48
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u91d1\u6ce2",
+                    "value": 12
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 19
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 10
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 10
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 14
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 26
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 25
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 90
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 12
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 19
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 10
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "\u7537",
+                "\u5973"
+            ],
+            "selected": {
+                "": true,
+                "\u7537": true,
+                "\u5973": true
+            }
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    }
+};
+        chart_4f74ac52beac431d84d1590699b3e27d.setOption(option_4f74ac52beac431d84d1590699b3e27d);
+    </script>
+                <div id="1edcfd5fcc544cbf89d50d387cb484b4" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_1edcfd5fcc544cbf89d50d387cb484b4 = echarts.init(
+            document.getElementById('1edcfd5fcc544cbf89d50d387cb484b4'), 'white', {renderer: 'canvas'});
+        var option_1edcfd5fcc544cbf89d50d387cb484b4 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "circular",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 5000,
+                "edgeLength": [
+                    10,
+                    50
+                ],
+                "gravity": 0.2
+            },
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "\u5b59\u5c11\u5e73",
+                    "fixed": false,
+                    "value": 1555,
+                    "category": 1,
+                    "symbolSize": 77.75
+                },
+                {
+                    "name": "\u5b59\u5c11\u5b89",
+                    "fixed": false,
+                    "value": 1400,
+                    "category": 1,
+                    "symbolSize": 70.0
+                },
+                {
+                    "name": "\u7530\u6da6\u53f6",
+                    "fixed": false,
+                    "value": 830,
+                    "category": 3,
+                    "symbolSize": 41.5
+                },
+                {
+                    "name": "\u5b59\u7389\u4ead",
+                    "fixed": false,
+                    "value": 578,
+                    "category": 1,
+                    "symbolSize": 28.9
+                },
+                {
+                    "name": "\u7530\u798f\u5802",
+                    "fixed": false,
+                    "value": 569,
+                    "category": 3,
+                    "symbolSize": 28.45
+                },
+                {
+                    "name": "\u7530\u6653\u971e",
+                    "fixed": false,
+                    "value": 494,
+                    "category": 3,
+                    "symbolSize": 24.7
+                },
+                {
+                    "name": "\u7530\u798f\u519b",
+                    "fixed": false,
+                    "value": 451,
+                    "category": 3,
+                    "symbolSize": 22.55
+                },
+                {
+                    "name": "\u8d3a\u79c0\u83b2",
+                    "fixed": false,
+                    "value": 365,
+                    "category": 1,
+                    "symbolSize": 18.25
+                },
+                {
+                    "name": "\u674e\u5411\u524d",
+                    "fixed": false,
+                    "value": 342,
+                    "category": 4,
+                    "symbolSize": 17.1
+                },
+                {
+                    "name": "\u91d1\u6ce2",
+                    "fixed": false,
+                    "value": 308,
+                    "category": 2,
+                    "symbolSize": 15.4
+                },
+                {
+                    "name": "\u5b59\u7389\u539a",
+                    "fixed": false,
+                    "value": 281,
+                    "category": 1,
+                    "symbolSize": 14.05
+                },
+                {
+                    "name": "\u91d1\u4fca\u6b66",
+                    "fixed": false,
+                    "value": 275,
+                    "category": 2,
+                    "symbolSize": 13.75
+                },
+                {
+                    "name": "\u5b59\u5170\u9999",
+                    "fixed": false,
+                    "value": 234,
+                    "category": 1,
+                    "symbolSize": 11.7
+                },
+                {
+                    "name": "\u7530\u6da6\u751f",
+                    "fixed": false,
+                    "value": 220,
+                    "category": 3,
+                    "symbolSize": 11.0
+                },
+                {
+                    "name": "\u90dd\u7ea2\u6885",
+                    "fixed": false,
+                    "value": 209,
+                    "category": 5,
+                    "symbolSize": 10.45
+                },
+                {
+                    "name": "\u60e0\u82f1",
+                    "fixed": false,
+                    "value": 167,
+                    "category": 5,
+                    "symbolSize": 8.35
+                },
+                {
+                    "name": "\u91d1\u4fca\u5c71",
+                    "fixed": false,
+                    "value": 161,
+                    "category": 5,
+                    "symbolSize": 8.05
+                },
+                {
+                    "name": "\u5f90\u6cbb\u529f",
+                    "fixed": false,
+                    "value": 158,
+                    "category": 4,
+                    "symbolSize": 7.9
+                },
+                {
+                    "name": "\u738b\u4e16\u624d",
+                    "fixed": false,
+                    "value": 156,
+                    "category": 5,
+                    "symbolSize": 7.8
+                },
+                {
+                    "name": "\u7530\u6d77\u6c11",
+                    "fixed": false,
+                    "value": 147,
+                    "category": 5,
+                    "symbolSize": 7.35
+                },
+                {
+                    "name": "\u987e\u517b\u6c11",
+                    "fixed": false,
+                    "value": 145,
+                    "category": 5,
+                    "symbolSize": 7.25
+                },
+                {
+                    "name": "\u5f20\u6709\u667a",
+                    "fixed": false,
+                    "value": 125,
+                    "category": 4,
+                    "symbolSize": 6.25
+                },
+                {
+                    "name": "\u674e\u767b\u4e91",
+                    "fixed": false,
+                    "value": 116,
+                    "category": 4,
+                    "symbolSize": 5.8
+                },
+                {
+                    "name": "\u91d1\u5149\u4eae",
+                    "fixed": false,
+                    "value": 114,
+                    "category": 5,
+                    "symbolSize": 5.7
+                },
+                {
+                    "name": "\u51af\u4e16\u5bbd",
+                    "fixed": false,
+                    "value": 109,
+                    "category": 4,
+                    "symbolSize": 5.45
+                }
+            ],
+            "categories": [
+                {},
+                {
+                    "name": "\u5b59\u5bb6"
+                },
+                {
+                    "name": "\u91d1\u5bb6"
+                },
+                {
+                    "name": "\u7530\u5bb6"
+                },
+                {
+                    "name": "\u4f17\u9886\u5bfc\u5e72\u90e8\u5bb6"
+                },
+                {
+                    "name": "\u5176\u4ed6"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 101
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u91d1\u6ce2",
+                    "value": 22
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 85
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 79
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 11
+                },
+                {
+                    "source": "\u90dd\u7ea2\u6885",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 12
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u91d1\u6ce2",
+                    "value": 219
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 25
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 53
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 109
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 101
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 81
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 318
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 72
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 165
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u60e0\u82f1",
+                    "value": 88
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 32
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 48
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 15
+                },
+                {
+                    "source": "\u5b59\u5c11\u5e73",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 64
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 109
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 85
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u91d1\u6ce2",
+                    "value": 59
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 33
+                },
+                {
+                    "source": "\u987e\u517b\u6c11",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 219
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 31
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 27
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 13
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 42
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 11
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 22
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 59
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 12
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 13
+                },
+                {
+                    "source": "\u91d1\u6ce2",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 20
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u6ce2",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 25
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 57
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 223
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 115
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 43
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 124
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 48
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 15
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 123
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 69
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 10
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u798f\u5802",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 12
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u91d1\u6ce2",
+                    "value": 31
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 53
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 57
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 34
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 79
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 18
+                },
+                {
+                    "source": "\u7530\u6da6\u751f",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 44
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 34
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 81
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 197
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 16
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u91d1\u6ce2",
+                    "value": 13
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 22
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 69
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 238
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 49
+                },
+                {
+                    "source": "\u7530\u6da6\u53f6",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 25
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 35
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 318
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u91d1\u6ce2",
+                    "value": 27
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u987e\u517b\u6c11",
+                    "value": 33
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u90dd\u7ea2\u6885",
+                    "value": 11
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 26
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u60e0\u82f1",
+                    "value": 12
+                },
+                {
+                    "source": "\u7530\u6653\u971e",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 197
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 149
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 165
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 124
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 39
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 27
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 23
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 23
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 352
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u6ce2",
+                    "value": 13
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 30
+                },
+                {
+                    "source": "\u5b59\u5c11\u5b89",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 21
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 16
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 149
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 91
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 43
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 32
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 26
+                },
+                {
+                    "source": "\u5b59\u7389\u539a",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 72
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u91d1\u6ce2",
+                    "value": 42
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 22
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u5170\u9999",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 20
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 91
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 92
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 223
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u6ce2",
+                    "value": 11
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 87
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5f90\u6cbb\u529f",
+                    "value": 18
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 126
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 44
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 19
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 14
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 37
+                },
+                {
+                    "source": "\u5b59\u7389\u4ead",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 18
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 88
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 12
+                },
+                {
+                    "source": "\u60e0\u82f1",
+                    "target": "\u738b\u4e16\u624d",
+                    "value": 35
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 30
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 92
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 123
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 54
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 126
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 23
+                },
+                {
+                    "source": "\u91d1\u4fca\u6b66",
+                    "target": "\u8d3a\u79c0\u83b2",
+                    "value": 10
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 30
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 37
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 35
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 12
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 21
+                },
+                {
+                    "source": "\u91d1\u5149\u4eae",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 14
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 87
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 115
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 54
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 23
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u7530\u6d77\u6c11",
+                    "value": 14
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 20
+                },
+                {
+                    "source": "\u91d1\u4fca\u5c71",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 12
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 18
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 48
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 11
+                },
+                {
+                    "source": "\u5f90\u6cbb\u529f",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 23
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 15
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 17
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 24
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 55
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 81
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 27
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 90
+                },
+                {
+                    "source": "\u7530\u798f\u519b",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 15
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 39
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 81
+                },
+                {
+                    "source": "\u51af\u4e16\u5bbd",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 12
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 39
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u7530\u6653\u971e",
+                    "value": 26
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u60e0\u82f1",
+                    "value": 35
+                },
+                {
+                    "source": "\u738b\u4e16\u624d",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 64
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 238
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 24
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 58
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 20
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u7530\u6da6\u751f",
+                    "value": 44
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 10
+                },
+                {
+                    "source": "\u674e\u5411\u524d",
+                    "target": "\u91d1\u6ce2",
+                    "value": 20
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 55
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 58
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 39
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 49
+                },
+                {
+                    "source": "\u674e\u767b\u4e91",
+                    "target": "\u5f20\u6709\u667a",
+                    "value": 19
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 44
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 38
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 23
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u4fca\u5c71",
+                    "value": 14
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 30
+                },
+                {
+                    "source": "\u7530\u6d77\u6c11",
+                    "target": "\u91d1\u5149\u4eae",
+                    "value": 14
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5c11\u5b89",
+                    "value": 352
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5c11\u5e73",
+                    "value": 48
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u91d1\u6ce2",
+                    "value": 12
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u5170\u9999",
+                    "value": 19
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u91d1\u4fca\u6b66",
+                    "value": 10
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u7530\u798f\u5802",
+                    "value": 10
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u7389\u4ead",
+                    "value": 14
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u5b59\u7389\u539a",
+                    "value": 26
+                },
+                {
+                    "source": "\u8d3a\u79c0\u83b2",
+                    "target": "\u7530\u6da6\u53f6",
+                    "value": 25
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u7530\u798f\u519b",
+                    "value": 90
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u51af\u4e16\u5bbd",
+                    "value": 12
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u674e\u767b\u4e91",
+                    "value": 19
+                },
+                {
+                    "source": "\u5f20\u6709\u667a",
+                    "target": "\u674e\u5411\u524d",
+                    "value": 10
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "\u5b59\u5bb6",
+                "\u91d1\u5bb6",
+                "\u7530\u5bb6",
+                "\u4f17\u9886\u5bfc\u5e72\u90e8\u5bb6",
+                "\u5176\u4ed6"
+            ],
+            "selected": {
+                "": true,
+                "\u5b59\u5bb6": true,
+                "\u91d1\u5bb6": true,
+                "\u7530\u5bb6": true,
+                "\u4f17\u9886\u5bfc\u5e72\u90e8\u5bb6": true,
+                "\u5176\u4ed6": true
+            }
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    }
+};
+        chart_1edcfd5fcc544cbf89d50d387cb484b4.setOption(option_1edcfd5fcc544cbf89d50d387cb484b4);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
