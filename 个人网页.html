@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>动画茶会</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ddd;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* 设置页脚的样式 */
+.footer {
+  background-color: #ddd;
+  padding: 13px;
+  text-align: center;
+}
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+p.inset {border-style: inset;}
+</style>
+</head>
+
+
+
+<body>
+
+<div class="topnav">
+  <a  href="个人网页.html" font style="font-family:楷体"> 主页 </a>
+  <a href="咒术回战.html" font style="font-family:楷体"> 咒术回战 </a>
+  <a href="鬼灭之刃.html" font style="font-family:楷体"> 鬼灭之刃 </a>
+  <a href="妖精森林的小不点.html" font style="font-family:楷体"> 妖精森林的小不点 </a>
+  <a href="关于我转生变成史莱姆这档事.html" font style="font-family:楷体"> 关于我转生变成史莱姆这档事 </a>
+</div>
+<div class="header">
+  <h1>动画茶会</h1>
+<p>Animation</p>
+</div>
+<div class="row">
+ 
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>动画简介</h2>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp动画的概念不同于一般意义上的动画片，动画是一种综合艺术，它是集合了绘画、电影、数字媒体、摄影、音乐、文学等众多艺术门类于一身的艺术表现形式。最早发源于19世纪上半叶的英国，兴盛于美国，中国动画起源于20世纪20年代。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp动画是一门年轻的艺术，它是唯一有确定诞生日期的一门艺术，1892年10月28日埃米尔·雷诺首次在巴黎著名的葛莱凡蜡像馆向观众放映光学影戏，标志着动画的正式诞生，同时埃米尔·雷诺也被誉为“动画之父”。动画艺术经过了100多年的发展，已经有了较为完善的理论体系和产业体系，并以其独特的艺术魅力深受人们的喜爱。</p>
+
+ </div>
+    <div class="card">
+<h2 >各国特点</h2>
+<h5 >中国动画</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp中国动画始终致力于创作一条具有本国特色的道路，坚持民族绘画传统，在改革开放以后，世界动画的大潮中也未放弃这一宗旨。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp动画片中洋溢着活泼清新的气息，给人以美的启迪。同时又十分注重教化意义，在动画片的创作中秉承“寓教于乐”，使动画片不致流于肤浅的纯娱乐搞笑。在影片类型上具有代表性的中国动画就是水墨动画。</p>
+<h5 >日本动画</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp日本动画作品非常偏好超现实主义题材，常与日式漫画紧密联系。在科技发达的当下，日本仍然坚持这采用传统的手工绘制的方法，致力于研究动画叙事语言的研究。 </p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp为提高工作效率，采用了只让说话者的口型发生变化的“口动作画法”；将一组连续动作的画面反复使用的“保存备用法”等方式制作。帧率方面通常是8张绘画（“三格拍摄法”）来表现，以此方式可以减少作画数量。作品内容多展示复杂的人物关系、故事情节以及影片主题。</p>
+<h5>美国动画</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp美国动画在世界动画史上占有重要的地位，引领着世界动画片的潮流和发展方向，一向注重高科技的应用与高质量的追求。以剧情片为主，多以大团圆结局，悲剧性的影片很少，特别注重细节的刻画，做到了雅俗共赏，适合绝大多数观众的审美口味。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp人物造型设计规范，与生活中的原形差别不大。动物形象大都作大幅度的夸张，大头、大眼、大手、大脚，成为被世界各国广泛借鉴的卡通模式。大量运用数字技术与电影技术结合，使画面更趋逼真形象，达到完美的画面效果。同时较完善的动画产业善于推出动画明星。</p>
+<h5>欧洲动画</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp欧洲动画较少生产动画连续剧，而是喜欢在动画电影上进行试验和探索，通常把欧洲的动画作品称为“动画艺术短片”。欧洲动画片把重点放在讲故事上，试图在有限的时间内表达丰富感情和无限哲思。以精炼的手法表现主题与内容，以独特的构图和色彩勾勒出情绪的波动。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp欧洲动画的创新性明显，不少创作者把哲学、美学等艺术思潮带入到动画的创作中。创新性主要体现在题材创新和技巧创新上。在技巧上，画面追求简约、怀旧，更多的追求内容上的饱满。同时特别专注于动画制作技法的创新。如法国动画大师亚历山大·阿雷克塞耶夫的针幕动画。</p>
+</div>
+    <div class="card">
+<h4>今天，我想在这里向大家介绍我最喜欢的几部日本动画。</h4>
+    </div>
+  </div>
+<div class="rightcolumn">
+    <div class="card">
+<h3 >动画原理</h3>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp动画是通过把人物的表情、动作、变化等分解后画成许多动作瞬间的画幅，再用摄影机连续拍摄成一系列画面，给视觉造成连续变化的图画。它的基本原理与电影、电视一样，都是视觉暂留原理。</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp医学证明人类具有“视觉暂留”的特性，人的眼睛看到一幅画或一个物体后，在0.34秒内不会消失。利用这一原理，在一幅画还没有消失前播放下一幅画，就会给人造成一种流畅的视觉变化效果。</p>
+    </div>
+  
+<div class="card">
+<img src="金木1.gif" alt="插图" height="154" >
+    </div>
+    <div class="card">
+<img src="金木2.gif" alt="插图" height="154" >
+    </div>
+    
+<div class="card">
+<h3 >动画分类</h3>
+<p>按工艺技术分为：平面手绘动画、立体拍摄动画、虚拟生成动画、真人结合动画</p>
+<p>按传播媒介分为：影院动画、电视动画、广告动画、科教动画</p>
+<p>按动画性质分为：商业动画、实验动画</p>
+ </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <img src="咒术回战.jpg" class="card-img-top" class="card-img-top" alt="咒术回战"height="455" >
+    <div class="card-body">
+      <h5 class="card-title">咒术回战</h5>
+    <p class="card-text">改编自芥见下下的同名漫画作品</p>
+    <a href="https://www.bilibili.com/bangumi/play/ss34430/?from=search&seid=14485102900759277796" target="_blank" class="btn btn-primary">欢迎来到咒术的世界</a>
+    <p class="card-text"><a href="咒术回战.html" style="color:DarkGray;font-size:15px;">想知道更多介绍请戳这里</a> </p>  
+   </div>
+  </div>
+  <div class="card">
+  <img src="鬼灭之刃.jpg" alt="鬼灭之刃"height="455" >
+    <div class="card-body">
+      <h5 class="card-title">鬼灭之刃</h5>
+      <p class="card-text">改编自吾峠呼世晴的同名漫画作品</p>
+    <a href="https://www.bilibili.com/bangumi/play/ss26801/?from=search&seid=9679276073966650324" target="_blank" class="btn btn-primary">欢迎来到人与鬼的世界</a>
+    <p class="card-text"><a href="鬼灭之刃.html" style="color:DarkGray;font-size:15px;">想知道更多介绍请戳这里</a> </p>
+    </div>
+  </div>
+  <div class="card">
+  <img src="妖精森林的小不点.jpg" alt="妖精森林的小不点"height="455" >
+  <div class="card-body">
+    <h5 class="card-title">妖精森林的小不点</h5>
+    <p class="card-text">改编自樫木祐人洋介的同名漫画作品</p>
+    <a href="https://www.bilibili.com/bangumi/play/ss21717/?from=search&seid=4238992622114686979" target="_blank" class="btn btn-primary">欢迎来到温暖的妖精森林</a>
+      <p class="card-text"><a href="妖精森林的小不点.html" style="color:DarkGray;font-size:15px;">想知道更多介绍请戳这里</a> </p>
+    </div>
+  </div>
+  <div class="card">
+  <img src="关于我转生变成史莱姆这档事.jpg" alt="关于我转生变成史莱姆这档事"height="455" >
+  <div class="card-body">
+    <h5 class="card-title" >关于我转生变成史莱姆这档事</h5>
+    <p class="card-text">改编自川上泰树的同名漫画作品</p>
+    <a href="https://www.bilibili.com/bangumi/play/ss25739/?from=search&seid=14420552407873613150" target="_blank" class="btn btn-primary">欢迎来到拥有魔法的异世界</a>
+      <p class="card-text"><a href="关于我转生变成史莱姆这档事.html" style="color:DarkGray;font-size:15px;">想知道更多介绍请戳这里</a> </p>
+    </div>
+
+    </div>
+  </div>
+
+
+
+<a href="https://baike.baidu.com/item/%E5%8A%A8%E7%94%BB/206564" style="color:DarkGray;font-size:15px;">部分内容源自百度百科</a> 
+
+</div>
+<div class="footer">
+  <h2>My Website</h2>
+</div>      
+</body>
+
+</html>
